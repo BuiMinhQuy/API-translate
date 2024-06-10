@@ -3,18 +3,18 @@
  
   <head>
     <meta charset="utf-8"> 
-    <title><link rel="stylesheet" href="Language Translator App in JavaScript\icon\iconTranslate.jpg">DỊCH</title>
+    <title>DỊCH</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome CDN Link for Icons -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
         <div class="text-input">
-          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
-          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+          <textarea spellcheck="false" class="from-text" placeholder="Nhập văn bản"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Dịch văn bản"></textarea>
         </div>
         <ul class="controls">
           <li class="row from">
@@ -35,8 +35,17 @@
         </ul>
       </div>
       <button>Translate</button>
+      <div class="h1">
+        <h1>Lịch Sử Dịch</h1> 
+        <button class="button_dl_hs">Xóa lịch sử dịch</button>
+      </div>
+      <div class="wrapper1">
+        <div class="text-input">
+          <textarea spellcheck="false" readonly disabled class="from-text-history" ></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text-history" ></textarea>
+        </div>
+      </div>
     </div>
-
     <script src="js/countries.js"></script>
     <script src="js/script.js"></script>
 
